@@ -4,10 +4,11 @@ using Android.App;
 using Android.Graphics;
 using Android.Widget;
 using Android.OS;
+using Android.Runtime;
 
 namespace FingerPaint
 {
-    [Activity(Label = "Finger Paint", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Finger Paint", MainLauncher = true), Register("fingerpaint.MainActivity")]
     public class MainActivity : Activity
     {
         FingerPaintCanvasView fingerPaintCanvasView;
